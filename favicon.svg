@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <!-- Portico mark — matches site/public/logo.png interlocking links -->
+  <rect width="128" height="128" rx="24" fill="#000000"/>
+  <g fill="none" stroke-width="16" stroke-linecap="round">
+    <!-- green upper link -->
+    <path stroke="#a3e635" d="M20 56 H38 A26 26 0 0 1 90 56"/>
+    <!-- cyan lower link -->
+    <path stroke="#22d3ee" d="M108 72 H90 A26 26 0 0 1 38 72"/>
+  </g>
+</svg>

@@ -8,7 +8,7 @@ Essay site: [porticonow.com](https://porticonow.com) · Product onboarding: [web
 
 - Stories and copy: `index.html`
 - Layout: `styles.css`
-- Brand mark: `logo.png`; tab icons: `favicon-*.png`, `apple-touch-icon.png`
+- Brand mark: `logo.png`; tab icons: `favicon.ico`, `favicon.svg`, `favicon-*.png`, `apple-touch-icon.png`, `apple-touch-icon-152.png`, `icon-192.png`, `icon-512.png`; PWA manifest: `manifest.webmanifest` (Add to Home Screen on iOS/Android). Browsers also fetch `/favicon.ico` directly — keep it at repo root.
 
 No build tools. Open `index.html` in a browser to preview.
 
