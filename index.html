@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="description" content="Stories from families using Portico — lists, Conversation, and AI Chat on an agent at home, coordinated through the cloud.">
+    <meta name="description" content="Stories from families using Portico — lists, Conversation, and AI Chat on a Cloud Agent we host, or an Edge Agent at home.">
     <meta name="theme-color" content="#050505">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Our Portico">
     <meta property="og:title" content="Our Portico — Family stories">
-    <meta property="og:description" content="Your agent at home. The cloud coordinates. The people you invite walk through the portico.">
+    <meta property="og:description" content="A Cloud Agent is hosted for you. An Edge Agent runs in your home. The cloud coordinates. The people you invite walk through the portico.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ourportico.com/">
     <meta property="og:image" content="https://ourportico.com/logo.png">
@@ -31,10 +31,14 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="wordmark" href="#top" aria-label="Our Portico home">
-        <img class="brand-logo" src="logo.png" width="32" height="32" alt="">
-        <span>Our Portico</span>
-      </a>
+      <div class="brand-cluster">
+        <a class="wordmark-logo" href="https://api.porticoworks.dev/app/#/login" aria-label="Sign in to Portico">
+          <img class="brand-logo" src="logo.png" width="32" height="32" alt="">
+        </a>
+        <a class="wordmark" href="/" aria-label="Our Portico">
+          <span>Our Portico</span>
+        </a>
+      </div>
       <nav aria-label="Main navigation">
         <a href="#how-it-works">How it works</a>
         <a href="#stories">Stories</a>
@@ -47,10 +51,10 @@
         <p class="eyebrow">Families · Illustrative stories</p>
         <h1 id="hero-title">What it feels like when your home is the hub.</h1>
         <p class="hero-lede">
-          Portico is built around a simple shape: an <strong>agent at home</strong> holds your lists, messages, and apps.
-          A <strong>server in the cloud</strong> coordinates accounts and invites — it does not store your family's content.
-          The people you choose connect through a <strong>portico</strong> — a threshold you control, not a warehouse
-          owned by someone else.
+          Portico is built around a simple shape: your <strong>agent</strong> holds your lists, messages, and apps.
+          A <strong>Cloud Agent</strong> is hosted for you so you can start today. An <strong>Edge Agent</strong> is that
+          same Portico on a computer in your home. A server in the cloud coordinates accounts and invites — it does not
+          keep your family's content.
         </p>
         <p class="disclaimer" role="note">
           The stories below are fictional illustrations of how Portico is designed to work. They are not quotes from
@@ -63,11 +67,15 @@
         <h2 id="arch-title">Three pieces, one doorway</h2>
         <div class="arch-grid">
           <article class="arch-card">
-            <p class="arch-label">At home</p>
-            <h3>Your agent</h3>
+            <p class="arch-label">Your agent</p>
+            <h3>Cloud or in your home</h3>
             <p>
-              A Cloud Agent or Edge Agent runs the apps your household uses — Lists, Conversation, AI Chat. Your grocery
-              list, your messages, your chat history live here first.
+              <strong>Cloud Agent — hosted for you.</strong>
+              Start sharing lists and messages without buying hardware.
+            </p>
+            <p>
+              <strong>Edge Agent — runs in your home.</strong>
+              The same Portico, on a computer you own. Grocery lists, Conversation, and AI Chat live on the agent you chose.
             </p>
           </article>
           <article class="arch-card">
@@ -117,7 +125,7 @@
           </blockquote>
           <footer class="story-meta">
             <span>Fictional · Cloud Agent → Edge Agent</span>
-            <span>Emphasis: shared list, invite-scoped access, data at home</span>
+            <span>Emphasis: shared list, then the agent moved home</span>
           </footer>
         </article>
 
@@ -212,9 +220,8 @@
       <section class="closing-cta" aria-labelledby="cta-title">
         <h2 id="cta-title">Build your portico.</h2>
         <p>
-          Start with a Cloud Agent in minutes, grow into an Edge Agent when you want data at home, and move toward a
-          Home Agent when you are ready for the full experience. Same account. Same invite model. Your data stays on
-          your side of the door.
+          Start with a Cloud Agent we host for you. Move to an Edge Agent on a computer in your home when you are ready.
+          Grow toward a Home Agent when you want more. Same account. Same invites. You decide where the data lives.
         </p>
         <div class="cta-actions">
           <a class="button button-primary" href="https://web.porticoworks.dev/start/">Start sharing</a>

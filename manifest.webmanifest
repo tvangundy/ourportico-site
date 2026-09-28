@@ -1,7 +1,7 @@
 {
   "name": "Our Portico",
   "short_name": "Our Portico",
-  "description": "Illustrative family stories for Portico — lists, conversation, and AI chat at home.",
+  "description": "Illustrative family stories for Portico — a Cloud Agent we host, or an Edge Agent at home.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

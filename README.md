@@ -1,6 +1,6 @@
 # ourportico-site
 
-Illustrative customer stories for [ourportico.com](https://ourportico.com) — fictional families using Lists, Conversation, and AI Chat on a Portico agent at home.
+Illustrative customer stories for [ourportico.com](https://ourportico.com) — fictional families using Lists, Conversation, and AI Chat on a Cloud Agent we host or an Edge Agent at home.
 
 Essay site: [porticonow.com](https://porticonow.com) · Product onboarding: [web.porticoworks.dev](https://web.porticoworks.dev)
 

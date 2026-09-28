@@ -32,6 +32,20 @@ strong { color: var(--ink); font-weight: 600; }
   padding: 0 24px;
   border-bottom: 1px solid var(--line);
 }
+.brand-cluster {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.wordmark-logo {
+  display: inline-flex;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.wordmark-logo:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
 .wordmark {
   display: inline-flex;
   align-items: center;
@@ -41,6 +55,9 @@ strong { color: var(--ink); font-weight: 600; }
   font-size: .95rem;
   letter-spacing: .01em;
   text-decoration: none;
+}
+.wordmark:hover span {
+  color: var(--cyan);
 }
 .brand-logo {
   display: block;
@@ -159,6 +176,9 @@ h2 {
   margin: 0;
   color: var(--muted);
   font-size: .95rem;
+}
+.arch-card p + p {
+  margin-top: 0.75rem;
 }
 
 .stories {
