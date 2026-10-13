@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="A small team's shared drive in Portico Files on an Edge Agent: per-person write access, client sharing, and network drives, step by step with screenshots.">
+    <meta name="theme-color" content="#050505">
+    <meta property="og:title" content="A team drive that lives in the shop — Our Portico">
+    <meta property="og:url" content="https://ourportico.com/journeys/team-files/">
+    <meta property="og:image" content="https://ourportico.com/logo.png">
+    <title>A team drive that lives in the shop — Our Portico</title>
+    <link rel="icon" href="../../favicon.ico" sizes="32x32">
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../../apple-touch-icon.png" sizes="180x180">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand-cluster">
+        <a class="wordmark-logo" href="https://api.porticoworks.dev/app/#/login" aria-label="Sign in to Portico">
+          <img class="brand-logo" src="../../logo.png" width="32" height="32" alt="">
+        </a>
+        <a class="wordmark" href="../../" aria-label="Our Portico">
+          <span>Our Portico</span>
+        </a>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="../../#uses">Use cases</a>
+        <a href="../../#stories">Stories</a>
+        <a class="nav-cta" href="https://web.porticoworks.dev/start/">Get started</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <p class="crumb"><a class="text-link" href="../../#uses">← All use cases</a></p>
+
+      <section class="journey-hero" aria-labelledby="journey-title">
+        <p class="eyebrow">Team journey · Files</p>
+        <h1 id="journey-title">A team drive that lives in the shop</h1>
+        <p class="hero-lede">
+          Hollis &amp; Park Landscaping is four people: two crews, an estimator, and a part-time bookkeeper. Their proposals,
+          site photos, and invoices were scattered across personal cloud accounts. They moved everything to one Portico
+          Files folder on the Edge Agent in the office. Now each person has the right access, and clients see only their
+          own job.
+        </p>
+        <ul class="journey-facts">
+          <li><strong>You'll need</strong>An Edge Agent on an always-on office computer, plus Portico Mobile</li>
+          <li><strong>Apps</strong>Portico Files</li>
+          <li><strong>Time</strong>About 20 minutes</li>
+        </ul>
+      </section>
+
+      <section class="journey-outcome" aria-labelledby="outcome-title">
+        <h2 id="outcome-title">What you'll end up with</h2>
+        <ul>
+          <li>A "Team Drive" folder on your own hardware.</li>
+          <li>Crews who can add site photos, and a bookkeeper who can only read.</li>
+          <li>One client folder shared with that client, and nothing else.</li>
+          <li>The drive mounted on the office computers like any network drive.</li>
+        </ul>
+      </section>
+
+      <ol class="journey-steps">
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Add the Team Drive folder</h2>
+              <p class="step-why">One folder on the office Edge Agent becomes the team's shared drive.</p>
+              <ol class="how">
+                <li>No Edge Agent yet? Follow <a class="text-link" href="https://web.porticoworks.dev/get-started/#install-edge">Install Portico Edge</a> on an always-on office computer.</li>
+                <li>In the Edge Agent console, under <strong>Things</strong>, tap <span class="ui">+</span> (<em>Add Thing</em>) and set <strong>Type</strong> to <span class="ui">Folder (Portico Files)</span>.</li>
+                <li><strong>Name</strong>: <em>Team Drive</em>. <strong>Folder name</strong>: <em>team</em>. Tap <span class="ui">Check folder</span>.</li>
+                <li>Leave <strong>Users read-only</strong> checked so you can grant write access one person at a time. Set a <strong>Quota GB</strong> if the disk is shared with other things. Tap <span class="ui">Save</span>.</li>
+              </ol>
+            </div>
+            <div class="shots">
+              <figure class="shot wide" data-shot="01-add-thing.png">
+                <div class="shot-frame"><span class="shot-label">The Add Thing dialog for Team Drive with a quota</span><code>01-add-thing.png</code></div>
+              </figure>
+            </div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Set up folders</h2>
+              <p class="step-why">A simple layout makes it easier to share just one part later.</p>
+              <ol class="how">
+                <li>Tap the <em>Team Drive</em> card to open it in Portico Files.</li>
+                <li>Use <span class="ui">New folder</span> to make <em>Proposals</em>, <em>Invoices</em>, and <em>Jobs</em>. Inside <em>Jobs</em>, make one folder per client, such as <em>Maple St — Chen</em>.</li>
+                <li>Use <span class="ui">Upload</span> or drag files in. Select files to <span class="ui">Rename</span>, <span class="ui">Move…</span>, or <span class="ui">Delete</span> them.</li>
+              </ol>
+            </div>
+            <div class="shots">
+              <figure class="shot wide" data-shot="02-tree.png">
+                <div class="shot-frame"><span class="shot-label">Portico Files Tree view with Proposals, Invoices, and Jobs</span><code>02-tree.png</code></div>
+              </figure>
+            </div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Invite the team</h2>
+              <p class="step-why">Each person gets an invitation that includes the Team Drive.</p>
+              <ol class="how">
+                <li>In <strong>Invitations</strong>, tap <span class="ui">+</span> (<em>New invite</em>) and choose <strong>Invitation type</strong> <span class="ui">Things</span>.</li>
+                <li><strong>Invite name</strong>: the person's name. Add their work email in <strong>To email (optional)</strong>.</li>
+                <li>Under <strong>Share things</strong>, tick <em>Team Drive</em>, then tap <span class="ui">Create</span> and text or email the link.</li>
+                <li>They open it on their phone, sign in, and tap <span class="ui">Accept</span> in Portico Mobile.</li>
+              </ol>
+              <p class="tip"><strong>A partner who runs things with you?</strong> Tick <strong>Allow access to this agent</strong> and choose <strong>Agent admin</strong> as the role, so they can manage the agent the same way you do.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot wide" data-shot="03-invite.png">
+                <div class="shot-frame"><span class="shot-label">The new invite dialog with Team Drive ticked under Share things</span><code>03-invite.png</code></div>
+              </figure>
+            </div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Decide who can edit</h2>
+              <p class="step-why">The crews add site photos. The bookkeeper only reads.</p>
+              <ol class="how">
+                <li>Open <em>Team Drive</em> and tap the <span class="ui">Users</span> pill.</li>
+                <li>Each person shows a role (<strong>Owner</strong>, <strong>Admin</strong>, <strong>User</strong>) and a <span class="ui">Can write</span> / <span class="ui">Read-only</span> toggle.</li>
+                <li>Switch the crew leads to <span class="ui">Can write</span>, and leave the bookkeeper on <span class="ui">Read-only</span>.</li>
+              </ol>
+            </div>
+            <div class="shots">
+              <figure class="shot" data-shot="04-users.png">
+                <div class="shot-frame"><span class="shot-label">The Team Drive Users panel with mixed Can write and Read-only</span><code>04-users.png</code></div>
+              </figure>
+            </div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Share one job folder with a client</h2>
+              <p class="step-why">The Chens see their own drawings and photos, not your invoices.</p>
+              <ol class="how">
+                <li>Select <em>Maple St — Chen</em> and tap <span class="ui">Share as Thing</span> in the selection bar. Name it <em>Chen — Maple St</em>.</li>
+                <li>Create a new <span class="ui">Things</span> invitation for the client, with only <em>Chen — Maple St</em> ticked.</li>
+                <li>Select the drawings and turn <span class="ui">Watermark: On</span>. The client sees their own email stamped on each image, and a <strong>View only</strong> badge instead of <strong>Download</strong>.</li>
+              </ol>
+            </div>
+            <div class="shots">
+              <figure class="shot" data-shot="05-share-as-thing.png">
+                <div class="shot-frame"><span class="shot-label">The selection bar with Share as Thing on the Maple St folder</span><code>05-share-as-thing.png</code></div>
+              </figure>
+              <figure class="shot" data-shot="06-client-view.png">
+                <div class="shot-frame"><span class="shot-label">The client's view: one folder, watermarked drawing, View only</span><code>06-client-view.png</code></div>
+              </figure>
+            </div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Mount it on the office computers</h2>
+              <p class="step-why">The estimator works in desktop apps and wants a normal drive letter.</p>
+              <ol class="how">
+                <li>In <em>Team Drive</em>, tap the share icon (<em>Share this folder</em>), then <span class="ui">Connect as drive…</span>.</li>
+                <li>The <strong>Connect as a network drive</strong> dialog shows the <strong>Server address</strong> and <strong>Username</strong>. Tap <span class="ui">Create drive password</span> the first time and save it right away. It's shown only once.</li>
+                <li>Follow the dialog's steps for Finder (<em>Go → Connect to Server…</em>), Windows File Explorer (<em>Map network drive…</em>), or the iPhone Files app.</li>
+                <li>Away from the office, keep the Portico VPN on so the drive stays connected.</li>
+              </ol>
+            </div>
+            <div class="shots">
+              <figure class="shot wide" data-shot="07-network-drive.png">
+                <div class="shot-frame"><span class="shot-label">The Connect as a network drive dialog</span><code>07-network-drive.png</code></div>
+              </figure>
+            </div>
+          </div>
+        </li>
+      </ol>
+
+      <section class="journey-more" aria-labelledby="more-title">
+        <p class="section-kicker">Keep going</p>
+        <h2 id="more-title">Next journeys</h2>
+        <div class="uses-grid">
+          <a class="use-card" href="../bar-closing/">
+            <p class="use-tag">Team · Reminders</p>
+            <h4>A bar's closing checklist</h4>
+            <span class="use-link">See the journey →</span>
+          </a>
+          <a class="use-card" href="../shift-handoff/">
+            <p class="use-tag">Team · Conversation</p>
+            <h4>Opening checklist and shift handoff</h4>
+            <span class="use-link">See the journey →</span>
+          </a>
+          <a class="use-card" href="../family-photos/">
+            <p class="use-tag">Family · Files</p>
+            <h4>Family photos, shared from home</h4>
+            <span class="use-link">See the journey →</span>
+          </a>
+        </div>
+        <p class="disclaimer" role="note">Hollis &amp; Park Landscaping is a fictional illustration.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>A project from <a class="text-link" href="https://porticoworks.dev/">Portico Works, LLC</a> · North Carolina, USA</p>
+      <p>
+        © <span id="year">2026</span>
+        · <a class="text-link" href="https://porticoworks.dev/privacy">Privacy</a>
+        · <a class="text-link" href="mailto:hello@porticoworks.dev">hello@porticoworks.dev</a>
+      </p>
+    </footer>
+
+    <script src="../journey.js"></script>
+  </body>
+</html>

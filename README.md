@@ -1,6 +1,6 @@
 # ourportico-site
 
-Illustrative customer stories for [ourportico.com](https://ourportico.com) — fictional families using Lists, Conversation, and AI Chat on a Cloud Agent we host or an Edge Agent at home.
+[ourportico.com](https://ourportico.com) shows how families and small teams use Portico. The intro has six use-case cards. Each card links to a step-by-step journey page with screenshots. The illustrative family stories follow the cards.
 
 Essay site: [porticonow.com](https://porticonow.com) · Product onboarding: [web.porticoworks.dev](https://web.porticoworks.dev)
 
@@ -10,7 +10,38 @@ Essay site: [porticonow.com](https://porticonow.com) · Product onboarding: [web
 - Layout: `styles.css`
 - Brand mark: `logo.png`; tab icons: `favicon.ico`, `favicon.svg`, `favicon-*.png`, `apple-touch-icon.png`, `apple-touch-icon-152.png`, `icon-192.png`, `icon-512.png`; PWA manifest: `manifest.webmanifest` (Add to Home Screen on iOS/Android). Browsers also fetch `/favicon.ico` directly — keep it at repo root.
 
-No build tools. Open `index.html` in a browser to preview.
+No build tools. Preview with `python3 -m http.server 4324` from the repo root, then open http://localhost:4324. The journey links point at folders, so opening `index.html` straight from disk won't follow them.
+
+## Journeys
+
+Use-case cards in `index.html` (`#uses`) link to `journeys/<slug>/index.html`. All pages share `styles.css` and `journeys/journey.js`.
+
+| Slug | Audience | Shows |
+| --- | --- | --- |
+| `grocery-list` | Family | Grocery list, list invites, notifications |
+| `chores` | Family | Checklist, item + list reminders |
+| `family-photos` | Family | Portico Files folder, Things invite, Photos view, write access, watermark |
+| `bar-closing` | Team | Checklist, nightly list reminder, "Just me" safety-net item reminder, Item checked off |
+| `shift-handoff` | Team | Opening checklist + reminders, Conversation thread, Timers & alarms |
+| `team-files` | Team | Team drive, per-user write, client folder via Share as Thing, network drive |
+
+### Screenshots
+
+Each step has a dashed slot labeled with what to capture and a filename. Save the image as `journeys/<slug>/shots/<filename>`. `journey.js` swaps in the real image when the file exists, so no HTML changes are needed. Phone shots are portrait (about 9:16). Slots marked `wide` are desktop shots of the Edge Agent console (about 16:10).
+
+**grocery-list:** `01-agent-ready` home screen with agent connected · `02-new-list` New dialog, Groceries / Grocery · `03-items` list with a few items · `04-invite-form` Users panel invite form · `05-invite-qr` Invite link QR dialog · `06-accept` invitee Accept · `07-shared-list` invitee's Lists showing Groceries · `08-notifications` Item added / Item removed on · `09-done` Done header with Clear
+
+**chores:** `01-checklist` Chores checklist · `02-mark-in-place` When marking items = Mark in place · `03-item-reminder` "Take out recycling" Every week / Everyone on this list · `04-list-reminder` Reminders section with the Sunday check-in · `05-users` Users panel · `06-push` lock-screen reminder
+
+**family-photos:** `01-edge-console` (wide) console with Things · `02-add-thing` (wide) Folder (Portico Files), Users read-only · `03-upload` folder with Upload · `04-invite-things` (wide) Invitation type Things, folder ticked · `05-photos-grid` Photos view · `06-photo-wall` Portico Photos · `07-can-write` Users panel with Can write · `08-watermark` watermarked photo, View only
+
+**bar-closing:** `01-closing-list` Closing checklist · `02-settings` Mark in place / Manual reorder / Mark all undone · `03-list-reminder` 1:30 AM Every day Everyone · `04-item-reminder` back door 2:15 AM Just me · `05-crew` Users panel · `06-checked-off` lock screen "X checked off …" · `07-done` all steps checked in place
+
+**shift-handoff:** `01-opening` Opening checklist · `02-6am` 6:00 AM Every day Everyone · `03-milk` item reminder Every week Just me · `04-shift-notes` Conversation thread · `05-timer` running cold brew timer · `06-list-invitations` List invitations with Accept
+
+**team-files:** `01-add-thing` (wide) Team Drive with quota · `02-tree` (wide) Tree view folders · `03-invite` (wide) Things invite with Team Drive · `04-users` Can write / Read-only mix · `05-share-as-thing` selection bar Share as Thing · `06-client-view` client's single watermarked folder · `07-network-drive` (wide) Connect as a network drive
+
+All people and businesses in the journeys are fictional; each page says so in its footer note.
 
 **Note:** All testimonials are clearly marked as fictional illustrations until real customer stories exist.
 

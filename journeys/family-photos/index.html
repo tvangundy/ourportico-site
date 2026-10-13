@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Share family photos from a Portico Files folder on your own Edge Agent, step by step with screenshots.">
+    <meta name="theme-color" content="#050505">
+    <meta property="og:title" content="Family photos, shared from home — Our Portico">
+    <meta property="og:url" content="https://ourportico.com/journeys/family-photos/">
+    <meta property="og:image" content="https://ourportico.com/logo.png">
+    <title>Family photos, shared from home — Our Portico</title>
+    <link rel="icon" href="../../favicon.ico" sizes="32x32">
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../../apple-touch-icon.png" sizes="180x180">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand-cluster">
+        <a class="wordmark-logo" href="https://api.porticoworks.dev/app/#/login" aria-label="Sign in to Portico">
+          <img class="brand-logo" src="../../logo.png" width="32" height="32" alt="">
+        </a>
+        <a class="wordmark" href="../../" aria-label="Our Portico">
+          <span>Our Portico</span>
+        </a>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="../../#uses">Use cases</a>
+        <a href="../../#stories">Stories</a>
+        <a class="nav-cta" href="https://web.porticoworks.dev/start/">Get started</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <p class="crumb"><a class="text-link" href="../../#uses">← All use cases</a></p>
+
+      <section class="journey-hero" aria-labelledby="journey-title">
+        <p class="eyebrow">Family journey · Files · Photos</p>
+        <h1 id="journey-title">Family photos, shared from home</h1>
+        <p class="hero-lede">
+          After beach week, the Reyes family had 600 photos spread across four phones. Grandma wanted to see all of them,
+          and Aunt Lucia wanted to add hers. Here is how they put them in one Portico Files folder on their own Edge Agent
+          and shared it with exactly those people.
+        </p>
+        <ul class="journey-facts">
+          <li><strong>You'll need</strong>An Edge Agent on an always-on computer at home, plus Portico Mobile</li>
+          <li><strong>Apps</strong>Portico Files (Photos view, Portico Photos)</li>
+          <li><strong>Time</strong>About 15 minutes, plus upload time</li>
+        </ul>
+      </section>
+
+      <section class="journey-outcome" aria-labelledby="outcome-title">
+        <h2 id="outcome-title">What you'll end up with</h2>
+        <ul>
+          <li>A "Family Photos" folder kept on your agent at home, not on someone else's cloud.</li>
+          <li>Grandparents who can browse and swipe through the photos but can't change them.</li>
+          <li>One relative who can also upload photos.</li>
+        </ul>
+      </section>
+
+      <ol class="journey-steps">
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Have an Edge Agent at home</h2>
+              <p class="step-why">Files are kept on your own computer, so sharing folders needs an Edge Agent. A Cloud Agent covers lists only.</p>
+              <ol class="how">
+                <li>Pick an always-on computer: an old Mac mini, a Linux box, or a Raspberry Pi with a big drive.</li>
+                <li>Follow <a class="text-link" href="https://web.porticoworks.dev/get-started/#install-edge">Install Portico Edge</a>.</li>
+                <li>Open the <strong>Edge Agent console</strong> and sign in.</li>
+              </ol>
+              <p class="tip"><strong>Keep it awake:</strong> if that computer sleeps, nobody can reach the photos.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot wide" data-shot="01-edge-console.png">
+                <div class="shot-frame"><span class="shot-label">The Edge Agent console with the Things panel showing</span><code>01-edge-console.png</code></div>
+              </figure>
+            </div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Add a Portico Files folder</h2>
+              <p class="step-why">A folder you add here becomes a "Thing" you can share with people.</p>
+              <ol class="how">
+                <li>In the <strong>Things</strong> panel, tap <span class="ui">+</span> (<em>Add Thing</em>).</li>
+                <li>Set <strong>Type</strong> to <span class="ui">Folder (Portico Files)</span>.</li>
+                <li><strong>Name</strong>: <em>Family Photos</em>. <strong>Folder name</strong>: <em>photos</em>. Tap <span class="ui">Check folder</span>. The folder is created if it doesn't exist yet.</li>
+                <li>Leave <strong>Users read-only</strong> checked. Guests can look but not change anything until you say so.</li>
+                <li>Tap <span class="ui">Save</span>.</li>
+              </ol>
+            </div>
+            <div class="shots">
+              <figure class="shot wide" data-shot="02-add-thing.png">
+                <div class="shot-frame"><span class="shot-label">The Add Thing dialog: Folder (Portico Files), Family Photos, Users read-only checked</span><code>02-add-thing.png</code></div>
+              </figure>
+            </div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Upload the photos</h2>
+              <p class="step-why">Organize by event so the photo wall is easy to browse.</p>
+              <ol class="how">
+                <li>Tap the <em>Family Photos</em> card in Things to open it in Portico Files.</li>
+                <li>Tap <span class="ui">New folder</span> and name it <em>2026 Beach week</em>.</li>
+                <li>Open that folder and tap <span class="ui">Upload</span> to pick photos, or drag them onto the page from a computer.</li>
+              </ol>
+            </div>
+            <div class="shots">
+              <figure class="shot" data-shot="03-upload.png">
+                <div class="shot-frame"><span class="shot-label">Portico Files with the 2026 Beach week folder and the Upload button</span><code>03-upload.png</code></div>
+              </figure>
+            </div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Invite Grandma and Grandpa</h2>
+              <p class="step-why">An invitation decides exactly what someone can reach. Here, that's this one folder.</p>
+              <ol class="how">
+                <li>In the <strong>Invitations</strong> panel, tap <span class="ui">+</span> (<em>New invite</em>).</li>
+                <li>Set <strong>Invitation type</strong> to <span class="ui">Things</span>.</li>
+                <li><strong>Invite name</strong>: <em>Grandma's iPad</em>. Add her email in <strong>To email (optional)</strong>.</li>
+                <li>Under <strong>Share things</strong>, tick <em>Family Photos</em>.</li>
+                <li>Tap <span class="ui">Create</span>, then send the link by text or email, or show the QR code.</li>
+              </ol>
+              <p class="tip"><strong>Leave Connection mode on Portico Relay.</strong> You don't need to change anything on your router.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot wide" data-shot="04-invite-things.png">
+                <div class="shot-frame"><span class="shot-label">The new invite dialog: Invitation type Things, Family Photos ticked</span><code>04-invite-things.png</code></div>
+              </figure>
+            </div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Grandma swipes through beach week</h2>
+              <p class="step-why">What she sees after she taps Accept.</p>
+              <ol class="how">
+                <li>She opens the link or scans the QR with her Camera, signs in, and taps <span class="ui">Accept</span> in Portico Mobile.</li>
+                <li>She opens <em>Family Photos</em> and switches the view from <span class="ui">Tree</span> to <span class="ui">Photos</span> to get a thumbnail grid.</li>
+                <li><span class="ui">Portico Photos</span> opens a full-screen photo wall. Tap a photo, then swipe for the next one.</li>
+                <li>She sees a <strong>Read-only</strong> badge, and there's no upload button for her.</li>
+              </ol>
+            </div>
+            <div class="shots">
+              <figure class="shot" data-shot="05-photos-grid.png">
+                <div class="shot-frame"><span class="shot-label">The Photos view: a grid of beach-week thumbnails</span><code>05-photos-grid.png</code></div>
+              </figure>
+              <figure class="shot" data-shot="06-photo-wall.png">
+                <div class="shot-frame"><span class="shot-label">The Portico Photos full-screen wall</span><code>06-photo-wall.png</code></div>
+              </figure>
+            </div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Let Aunt Lucia add her photos</h2>
+              <p class="step-why">Give write access one person at a time.</p>
+              <ol class="how">
+                <li>Invite Lucia the same way as in step 4.</li>
+                <li>Once she has accepted, open <em>Family Photos</em> and tap the <span class="ui">Users</span> pill.</li>
+                <li>Next to Lucia, switch <span class="ui">Read-only</span> to <span class="ui">Can write</span>.</li>
+                <li>She now sees <span class="ui">Upload</span> and <span class="ui">New folder</span> in that folder.</li>
+              </ol>
+            </div>
+            <div class="shots">
+              <figure class="shot" data-shot="07-can-write.png">
+                <div class="shot-frame"><span class="shot-label">The folder's Users panel with Lucia set to Can write</span><code>07-can-write.png</code></div>
+              </figure>
+            </div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Optional: share one album, watermarked</h2>
+              <p class="step-why">Share just one album with a friend, and put their name on every photo they see.</p>
+              <ol class="how">
+                <li>Select the <em>2026 Beach week</em> folder and tap <span class="ui">Share as Thing</span> in the selection bar. Give it a name.</li>
+                <li>Invite the friend with that new Thing ticked. They see only that album.</li>
+                <li>Select photos and turn <span class="ui">Watermark: On</span>. View-only guests see their own email on the photo and get a <strong>View only</strong> badge instead of <strong>Download</strong>.</li>
+              </ol>
+            </div>
+            <div class="shots">
+              <figure class="shot" data-shot="08-watermark.png">
+                <div class="shot-frame"><span class="shot-label">A watermarked photo with the View only badge</span><code>08-watermark.png</code></div>
+              </figure>
+            </div>
+          </div>
+        </li>
+      </ol>
+
+      <section class="journey-more" aria-labelledby="more-title">
+        <p class="section-kicker">Keep going</p>
+        <h2 id="more-title">Next journeys</h2>
+        <div class="uses-grid">
+          <a class="use-card" href="../grocery-list/">
+            <p class="use-tag">Family · Lists</p>
+            <h4>One grocery list for the whole house</h4>
+            <span class="use-link">See the journey →</span>
+          </a>
+          <a class="use-card" href="../chores/">
+            <p class="use-tag">Family · Reminders</p>
+            <h4>Chores the kids actually get pinged about</h4>
+            <span class="use-link">See the journey →</span>
+          </a>
+          <a class="use-card" href="../team-files/">
+            <p class="use-tag">Team · Files</p>
+            <h4>A team drive that lives in the shop</h4>
+            <span class="use-link">See the journey →</span>
+          </a>
+        </div>
+        <p class="disclaimer" role="note">The Reyes family is a fictional illustration.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>A project from <a class="text-link" href="https://porticoworks.dev/">Portico Works, LLC</a> · North Carolina, USA</p>
+      <p>
+        © <span id="year">2026</span>
+        · <a class="text-link" href="https://porticoworks.dev/privacy">Privacy</a>
+        · <a class="text-link" href="mailto:hello@porticoworks.dev">hello@porticoworks.dev</a>
+      </p>
+    </footer>
+
+    <script src="../journey.js"></script>
+  </body>
+</html>
