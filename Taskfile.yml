@@ -1,0 +1,66 @@
+# https://taskfile.dev
+# Static GitHub Pages site for ourportico.com. No build step.
+version: "3"
+
+tasks:
+  default:
+    desc: ourportico-site banner
+    silent: true
+    cmds:
+      - |
+        echo "ourportico-site — use-case stories and journeys for ourportico.com"
+        echo ""
+        echo "  task preview        — http://localhost:4324"
+        echo "  task shots:file     — move Photo-inbox/<slot>.png into journeys/<slug>/shots/"
+        echo "  task shots:missing  — list screenshot slots that still have no image"
+        echo ""
+        echo "No build. Edit index.html, styles.css, or journeys/<slug>/index.html, then refresh the browser."
+
+  shots:file:
+    desc: Move Photo-inbox images whose filename matches a journey slot into that journey's shots/ folder
+    silent: true
+    cmds:
+      - |
+        set -euo pipefail
+        shopt -s nullglob
+        unmatched=()
+        for f in Photo-inbox/*.png Photo-inbox/*.PNG; do
+          name="$(basename "$f")"
+          pages=$(grep -l "data-shot=\"${name}\"" journeys/*/index.html || true)
+          if [ "$(printf '%s' "$pages" | grep -c .)" -ne 1 ]; then
+            unmatched+=("$name")
+            continue
+          fi
+          slug="$(basename "$(dirname "$pages")")"
+          mkdir -p "journeys/${slug}/shots"
+          mv "$f" "journeys/${slug}/shots/${name}"
+          chmod 644 "journeys/${slug}/shots/${name}"
+          echo "filed  ${name}  →  journeys/${slug}/shots/"
+        done
+        if [ "${#unmatched[@]}" -gt 0 ]; then
+          echo ""
+          echo "Left in Photo-inbox (no matching slot — rename to a slot filename or add a slot):"
+          printf '  %s\n' "${unmatched[@]}"
+        fi
+
+  shots:missing:
+    desc: List screenshot slots that have no image in journeys/<slug>/shots/ yet
+    silent: true
+    cmds:
+      - |
+        set -euo pipefail
+        for page in journeys/*/index.html; do
+          slug="$(basename "$(dirname "$page")")"
+          grep -o 'data-shot="[^"]*"' "$page" | cut -d'"' -f2 | while read -r name; do
+            [ -f "journeys/${slug}/shots/${name}" ] || echo "${slug}/${name}"
+          done
+        done
+
+  preview:
+    desc: Preview the static site at http://localhost:4324
+    cmds:
+      - |
+        set -euo pipefail
+        PORT="{{.PORT | default "4324"}}"
+        echo "Preview http://localhost:${PORT}"
+        exec python3 -m http.server "${PORT}" --bind 0.0.0.0

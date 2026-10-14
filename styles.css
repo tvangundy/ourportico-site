@@ -95,6 +95,22 @@ main {
   padding: 0 24px 72px;
 }
 
+.hero-art {
+  margin: 40px 0 0;
+}
+.hero-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+.hero-intro {
+  max-width: 720px;
+  margin: 32px 0 0;
+  font-size: 1.2rem;
+  line-height: 1.75;
+}
+.hero-intro + .hero-art { margin-top: 64px; }
 .hero {
   max-width: 720px;
   padding: 64px 0 56px;
@@ -530,6 +546,8 @@ h2 {
 
 @media (max-width: 640px) {
   nav a:not(.nav-cta) { display: none; }
+  .hero-art { margin-top: 24px; }
+  .hero-intro + .hero-art { margin-top: 48px; }
   .hero { padding-top: 48px; }
   .story-card { padding: 28px 22px; }
   .cta-actions { flex-direction: column; align-items: stretch; }

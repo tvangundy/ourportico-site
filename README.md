@@ -10,7 +10,7 @@ Essay site: [porticonow.com](https://porticonow.com) · Product onboarding: [web
 - Layout: `styles.css`
 - Brand mark: `logo.png`; tab icons: `favicon.ico`, `favicon.svg`, `favicon-*.png`, `apple-touch-icon.png`, `apple-touch-icon-152.png`, `icon-192.png`, `icon-512.png`; PWA manifest: `manifest.webmanifest` (Add to Home Screen on iOS/Android). Browsers also fetch `/favicon.ico` directly — keep it at repo root.
 
-No build tools. Preview with `python3 -m http.server 4324` from the repo root, then open http://localhost:4324. The journey links point at folders, so opening `index.html` straight from disk won't follow them.
+No build tools. Preview with `task preview` (http://localhost:4324). Override the port with `task preview PORT=8080`. The journey links point at folders, so opening `index.html` straight from disk won't follow them.
 
 ## Journeys
 
@@ -29,7 +29,16 @@ Use-case cards in `index.html` (`#uses`) link to `journeys/<slug>/index.html`. A
 
 Each step has a dashed slot labeled with what to capture and a filename. Save the image as `journeys/<slug>/shots/<filename>`. `journey.js` swaps in the real image when the file exists, so no HTML changes are needed. Phone shots are portrait (about 9:16). Slots marked `wide` are desktop shots of the Edge Agent console (about 16:10).
 
-**grocery-list:** `01-agent-ready` home screen with agent connected · `02-new-list` New dialog, Groceries / Grocery · `03-items` list with a few items · `04-invite-form` Users panel invite form · `05-invite-qr` Invite link QR dialog · `06-accept` invitee Accept · `07-shared-list` invitee's Lists showing Groceries · `08-notifications` Item added / Item removed on · `09-done` Done header with Clear
+Slot filenames are unique across all journeys, so the easiest workflow is an inbox:
+
+1. Drop screenshots into `Photo-inbox/` (git-ignored, never published).
+2. Rename each one to its slot filename, e.g. `03-items.png`.
+3. Run `task shots:file`. Each matching file moves to the right `journeys/<slug>/shots/` folder; anything without a slot stays in the inbox and is listed.
+4. Run `task shots:missing` to see which slots still need a screenshot.
+
+The slot label becomes the image's alt text, so if a shot doesn't match its label, fix the label in the journey page. Crop out or black-box real names, emails, and live invite links before filing.
+
+**grocery-list:** `01-agent-provisioning` new Cloud Agent Provisioning / Linking · `01-agent-ready` home screen with agent connected · `02-open-lists` Apps card with Portico Lists · `02-new-list` New dialog, Groceries / Grocery · `03-items` list with a few items · `04-invite-form` Users panel invite form · `05-invite-qr` Invite link QR dialog · `06-accept` invitee Accept · `07-shared-list` invitee's Lists showing Groceries · `08-notifications` Item added / Item removed on · `09-done` Done header with Clear
 
 **chores:** `01-checklist` Chores checklist · `02-mark-in-place` When marking items = Mark in place · `03-item-reminder` "Take out recycling" Every week / Everyone on this list · `04-list-reminder` Reminders section with the Sunday check-in · `05-users` Users panel · `06-push` lock-screen reminder
 
