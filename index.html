@@ -48,43 +48,11 @@
     </header>
 
     <main id="top">
-      <section class="intro" aria-label="How Portico connects your people">
-        <figure class="hero-art">
-          <img src="portico-hero-e-switchboard.jpg" width="1280" height="720"
-            alt="A switchboard operator at a Portico switchboard, patching glowing cords that connect people on phones, tablets, and laptops to their home, cloud, chat, and dashboard.">
-        </figure>
-        <p class="hero-intro">
-          Think of <strong>Portico Server</strong> as a switchboard operator. When someone you invited opens the app,
-          it checks who they are and what you have allowed them to reach. Then it opens a secure, private tunnel
-          between their phone and your personal <strong>agent</strong>, the one that holds your lists, messages, and
-          files. Like a good operator, it makes the connection and then gets off the line. It never keeps the conversation.
-        </p>
-
-        <figure class="hero-art">
-          <img src="portico-hero-f-agent.jpg" width="1280" height="720"
-            alt="A household steward inside a Portico house, holding a checklist beside a filing cabinet of folders and photos, a reminder clock, and an AI chat bubble, while tunnels from family members' phones arrive through shielded doors.">
-        </figure>
-        <p class="hero-intro">
-          Think of <strong>Portico Agent</strong> as the steward of your household. It waits at the far end of every
-          tunnel, in a Cloud Agent we host for you or on a computer in your home, and it keeps what your people share:
-          the grocery list, the chore checklist, the family thread, the photo folders. It sends the reminders, answers
-          AI Chat using what your household keeps on it, and hands each person only what you invited them to see.
-          The operator connects the call. The agent is the one who picks up.
-        </p>
-        <p class="hero-intro">
-          Put the two together and you have a portico: a covered doorway between your home and the people you trust.
-          The operator checks who may come to the door. The steward keeps what they find when they get there. Your
-          lists, messages, and files never move into the operator's office. They stay with the steward, wherever you
-          choose to keep them. No ports to open, no servers to learn, no handing your family's life to someone else's
-          app. You invite your people, and what happens next is wonderfully ordinary.
-        </p>
-      </section>
-
       <section class="hero" aria-labelledby="hero-title">
         <p class="eyebrow">Families · Small teams</p>
         <h1 id="hero-title">The lists, reminders, and files your people share, kept on an agent you own.</h1>
         <p class="hero-lede">
-          Every one of those tunnels is somebody getting something done. A bar crew working through the closing
+          Every invite is somebody getting something done. A bar crew working through the closing
           checklist. A family on one grocery list. Grandparents scrolling the beach-week photos. Same Portico
           underneath: your <strong>agent</strong> holds the lists and files, and you invite the people who should see
           them. Pick one below and follow along, screen by screen.
@@ -161,36 +129,57 @@
       <section class="architecture" id="how-it-works" aria-labelledby="arch-title">
         <p class="section-kicker">The design</p>
         <h2 id="arch-title">Three pieces, one doorway</h2>
+        <p class="arch-intro">
+          Out on the open internet, <strong>Portico Server</strong> is the post office: it keeps accounts, records who
+          you've invited, and delivers the invitations. On your side of the door, your <strong>agent</strong> is the
+          concierge: it holds the keys, keeps what your people share, and checks every guest against your list.
+        </p>
+        <div class="arch-art">
+          <figure>
+            <img src="post-office.png" width="1280" height="720" loading="lazy"
+              alt="On the left, a postal clerk sorts envelopes in a small post office. On the right, across a fence, a concierge holds the house keys at a porch with two columns. A bird carries one envelope between them.">
+            <figcaption>The post office delivers the invitation. The concierge holds the keys.</figcaption>
+          </figure>
+          <figure>
+            <img src="portico-hero-f-agent.jpg" width="1280" height="720" loading="lazy"
+              alt="Inside a Portico house, the agent holds a checklist beside a filing cabinet of folders and photos, a reminder clock, and an AI chat bubble, while private paths from family members' phones arrive through shielded doors.">
+            <figcaption>Behind the door, your agent keeps the lists, photos, and reminders.</figcaption>
+          </figure>
+        </div>
         <div class="arch-grid">
           <article class="arch-card">
             <p class="arch-label">Your agent</p>
-            <h3>Cloud or in your home</h3>
+            <h3>The concierge</h3>
             <p>
-              <strong>Cloud Agent — hosted for you.</strong>
-              Start sharing lists and messages without buying hardware.
+              It keeps the grocery list, the chore checklist, the family thread, and the photo folders. It sends the
+              reminders, answers AI Chat using what your household keeps on it, and hands each person only what you
+              invited them to see.
             </p>
             <p>
-              <strong>Edge Agent — runs in your home.</strong>
-              The same Portico, on a computer you own. Grocery lists, Conversation, and AI Chat live on the agent you chose.
+              <strong>Cloud Agent</strong> — hosted for you, no hardware to buy.
+              <strong>Edge Agent</strong> — the same Portico on a computer in your home.
             </p>
           </article>
           <article class="arch-card">
             <p class="arch-label">In the cloud</p>
-            <h3>Coordination only</h3>
+            <h3>The post office</h3>
             <p>
-              Portico Server handles sign-in, invites, and which routes each guest may use. It introduces people to your
-              agent. It is not where your family's data is kept.
+              Portico Server handles sign-in, accounts, and invitations. It knows an invitation exists; it does not know
+              what is behind the door. Your lists, messages, and files are never kept there.
             </p>
           </article>
           <article class="arch-card">
             <p class="arch-label">For guests</p>
             <h3>The portico</h3>
             <p>
-              Invite someone and they get access to what you chose — nothing else. Remote family connects through Portico
-              Relay. Your router stays closed. Your home stays yours.
+              Your agent checks each guest against the list and opens a private path from their phone straight to what
+              you shared — nothing else. Remote family connects through Portico Relay. Your router stays closed.
             </p>
           </article>
         </div>
+        <p class="arch-more">
+          <a class="text-link" href="https://web.porticoworks.dev/how-it-works/">The full picture: how Portico works →</a>
+        </p>
       </section>
 
       <section class="stories" id="stories" aria-labelledby="stories-title">
@@ -245,8 +234,8 @@
               like texting. Underneath, it is our thread on our hardware.
             </p>
             <p>
-              Portico Server in the cloud is the address book and the doorman. It knows Elena is invited. It connects
-              her to our agent when she opens the app. The messages do not live in Virginia in someone else's database.
+              Portico Server in the cloud is the post office. It knows Elena is invited and delivered her invitation.
+              When she opens the app, our agent checks her against our guest list and lets her in. The messages do not live in Virginia in someone else's database.
               They live in the hallway between us — the portico — and we decide who walks through.
             </p>
           </blockquote>
