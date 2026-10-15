@@ -40,8 +40,8 @@
         </a>
       </div>
       <nav aria-label="Main navigation">
-        <a href="#uses">Use cases</a>
         <a href="#how-it-works">How it works</a>
+        <a href="#uses">Use cases</a>
         <a href="#stories">Stories</a>
         <a class="nav-cta" href="https://web.porticoworks.dev/start/">Get started</a>
       </nav>
@@ -55,12 +55,70 @@
           Every invite is somebody getting something done. A bar crew working through the closing
           checklist. A family on one grocery list. Grandparents scrolling the beach-week photos. Same Portico
           underneath: your <strong>agent</strong> holds the lists and files, and you invite the people who should see
-          them. Pick one below and follow along, screen by screen.
+          them. Pick one further down and follow along, screen by screen.
         </p>
         <div class="cta-actions">
           <a class="button button-primary" href="#uses">See what people use it for</a>
           <a class="button button-light" href="#how-it-works">How it works</a>
         </div>
+      </section>
+
+      <section class="architecture" id="how-it-works" aria-labelledby="arch-title">
+        <p class="section-kicker">The design</p>
+        <h2 id="arch-title">Three pieces, one doorway</h2>
+        <p class="arch-intro">
+          Out on the open internet, <strong>Portico Server</strong> is the post office: it keeps accounts, records who
+          you've invited, and delivers the invitations. On your side of the door, your <strong>agent</strong> is the
+          concierge: it holds the keys, keeps what your people share, and checks every guest against your list.
+          Between them is the <strong>portico</strong>: the one door guests come through, where your agent checks
+          each invitation before showing anyone what you shared.
+        </p>
+        <div class="arch-art">
+          <figure>
+            <img src="post-office.png" width="1280" height="720" loading="lazy"
+              alt="On the left, a postal clerk sorts envelopes in a small post office. On the right, across a fence, a concierge holds the house keys at a porch with two columns. A bird carries one envelope between them.">
+            <figcaption>The post office delivers the invitation. The concierge holds the keys.</figcaption>
+          </figure>
+          <figure>
+            <img src="portico-hero-f-agent.jpg" width="1280" height="720" loading="lazy"
+              alt="Inside a Portico house, the agent holds a checklist beside a filing cabinet of folders and photos, a reminder clock, and an AI chat bubble, while private paths from family members' phones arrive through shielded doors.">
+            <figcaption>Behind the door, your agent keeps the lists, photos, and reminders.</figcaption>
+          </figure>
+        </div>
+        <div class="arch-grid">
+          <article class="arch-card">
+            <p class="arch-label">Your agent</p>
+            <h3>The concierge</h3>
+            <p>
+              It keeps the grocery list, the chore checklist, the family thread, and the photo folders. It sends the
+              reminders, answers AI Chat using what your household keeps on it, and hands each person only what you
+              invited them to see.
+            </p>
+            <p>
+              <strong>Cloud Agent</strong> — hosted for you, no hardware to buy.
+              <strong>Edge Agent</strong> — the same Portico on a computer in your home.
+            </p>
+          </article>
+          <article class="arch-card">
+            <p class="arch-label">In the cloud</p>
+            <h3>The post office</h3>
+            <p>
+              Portico Server handles sign-in, accounts, and invitations. It knows an invitation exists; it does not know
+              what is behind the door. Your lists, messages, and files are never kept there.
+            </p>
+          </article>
+          <article class="arch-card">
+            <p class="arch-label">For guests</p>
+            <h3>The portico</h3>
+            <p>
+              Your agent checks each guest against the list and opens a private path from their phone straight to what
+              you shared — nothing else. Remote family connects through Portico Relay. Your router stays closed.
+            </p>
+          </article>
+        </div>
+        <p class="arch-more">
+          <a class="text-link" href="https://web.porticoworks.dev/how-it-works/">The full picture: how Portico works →</a>
+        </p>
       </section>
 
       <section class="uses" id="uses" aria-labelledby="uses-title">
@@ -124,62 +182,6 @@
             </a>
           </div>
         </div>
-      </section>
-
-      <section class="architecture" id="how-it-works" aria-labelledby="arch-title">
-        <p class="section-kicker">The design</p>
-        <h2 id="arch-title">Three pieces, one doorway</h2>
-        <p class="arch-intro">
-          Out on the open internet, <strong>Portico Server</strong> is the post office: it keeps accounts, records who
-          you've invited, and delivers the invitations. On your side of the door, your <strong>agent</strong> is the
-          concierge: it holds the keys, keeps what your people share, and checks every guest against your list.
-        </p>
-        <div class="arch-art">
-          <figure>
-            <img src="post-office.png" width="1280" height="720" loading="lazy"
-              alt="On the left, a postal clerk sorts envelopes in a small post office. On the right, across a fence, a concierge holds the house keys at a porch with two columns. A bird carries one envelope between them.">
-            <figcaption>The post office delivers the invitation. The concierge holds the keys.</figcaption>
-          </figure>
-          <figure>
-            <img src="portico-hero-f-agent.jpg" width="1280" height="720" loading="lazy"
-              alt="Inside a Portico house, the agent holds a checklist beside a filing cabinet of folders and photos, a reminder clock, and an AI chat bubble, while private paths from family members' phones arrive through shielded doors.">
-            <figcaption>Behind the door, your agent keeps the lists, photos, and reminders.</figcaption>
-          </figure>
-        </div>
-        <div class="arch-grid">
-          <article class="arch-card">
-            <p class="arch-label">Your agent</p>
-            <h3>The concierge</h3>
-            <p>
-              It keeps the grocery list, the chore checklist, the family thread, and the photo folders. It sends the
-              reminders, answers AI Chat using what your household keeps on it, and hands each person only what you
-              invited them to see.
-            </p>
-            <p>
-              <strong>Cloud Agent</strong> — hosted for you, no hardware to buy.
-              <strong>Edge Agent</strong> — the same Portico on a computer in your home.
-            </p>
-          </article>
-          <article class="arch-card">
-            <p class="arch-label">In the cloud</p>
-            <h3>The post office</h3>
-            <p>
-              Portico Server handles sign-in, accounts, and invitations. It knows an invitation exists; it does not know
-              what is behind the door. Your lists, messages, and files are never kept there.
-            </p>
-          </article>
-          <article class="arch-card">
-            <p class="arch-label">For guests</p>
-            <h3>The portico</h3>
-            <p>
-              Your agent checks each guest against the list and opens a private path from their phone straight to what
-              you shared — nothing else. Remote family connects through Portico Relay. Your router stays closed.
-            </p>
-          </article>
-        </div>
-        <p class="arch-more">
-          <a class="text-link" href="https://web.porticoworks.dev/how-it-works/">The full picture: how Portico works →</a>
-        </p>
       </section>
 
       <section class="stories" id="stories" aria-labelledby="stories-title">
