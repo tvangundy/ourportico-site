@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="How the Lindstroms keep Portico AI memory in three places: a fact for one person, a fact for one conversation, and a fact for the whole household.">
+    <meta name="theme-color" content="#050505">
+    <meta property="og:title" content="What the house remembers, and what stays yours — Our Portico">
+    <meta property="og:url" content="https://ourportico.com/journeys/ai-memory/">
+    <meta property="og:image" content="https://ourportico.com/logo.png">
+    <title>What the house remembers, and what stays yours — Our Portico</title>
+    <link rel="icon" href="../../favicon.ico" sizes="32x32">
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../../apple-touch-icon.png" sizes="180x180">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand-cluster">
+        <a class="wordmark-logo" href="https://api.porticoworks.dev/app/#/login" aria-label="Sign in to Portico">
+          <img class="brand-logo" src="../../logo.png" width="32" height="32" alt="">
+        </a>
+        <a class="wordmark" href="../../" aria-label="Our Portico">
+          <span>Our Portico</span>
+        </a>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="../../#uses">Use cases</a>
+        <a href="../../#stories">Stories</a>
+        <a class="nav-cta" href="https://web.porticoworks.dev/start/">Get started</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <p class="crumb"><a class="text-link" href="../../#uses">← All use cases</a></p>
+
+      <section class="journey-hero" aria-labelledby="journey-title">
+        <p class="eyebrow">Family journey · Lists · AI Chat</p>
+        <h1 id="journey-title">What the house remembers, and what stays yours</h1>
+        <p class="hero-lede">
+          The Lindstroms wanted one assistant for meal planning and homework, without every fact becoming household
+          knowledge. Portico AI keeps a short fact in one of three places. A personal note rides along only when that
+          person asks. A conversation note stays in that thread. A household note is in every reply, and only the host
+          can save it.
+        </p>
+        <ul class="journey-facts">
+          <li><strong>You'll need</strong>Portico Mobile, an agent, and an API key saved on that agent. A Cloud Agent is fine.</li>
+          <li><strong>Apps</strong>Portico Lists (AI Chat, Conversation)</li>
+          <li><strong>Time</strong>About 15 minutes after AI is set up</li>
+        </ul>
+      </section>
+
+      <section class="journey-outcome" aria-labelledby="outcome-title">
+        <h2 id="outcome-title">What you'll end up with</h2>
+        <ul>
+          <li>A private AI Chat that remembers one person’s allergy, and leaves it out of everyone else’s questions.</li>
+          <li>A family thread that remembers “vegetarian through October” for anyone in that conversation.</li>
+          <li>One household fact, “the dog is Biscuit,” included in every Portico AI reply on the agent.</li>
+        </ul>
+      </section>
+
+      <ol class="journey-steps">
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Open a private AI Chat</h2>
+              <p class="step-why">A one-person thread is where a personal fact belongs. The model replies after every message you send.</p>
+              <ol class="how">
+                <li>In <strong>Portico Lists</strong>, tap <span class="ui">+</span> (<em>New list</em>).</li>
+                <li>Name it <em>Maya</em>, set <strong>Type</strong> to <span class="ui">AI Chat</span>, and tap <span class="ui">Create</span>.</li>
+                <li>If AI Chat is missing from the type list, save an API key in the agent console under <span class="ui">AI</span> first.</li>
+              </ol>
+              <p class="tip"><strong>New to Portico?</strong> The <a class="text-link" href="../grocery-list/">grocery list journey</a> covers installing the app and getting an agent. Setting up the key is in the <a class="text-link" href="https://web.porticoworks.dev/guides/#ai">AI guide</a>.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot" data-shot="01-ai-chat.png">
+                <div class="shot-frame"><span class="shot-label">A new AI Chat named Maya, empty and ready</span><code>01-ai-chat.png</code></div>
+              </figure>
+            </div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Save a fact that is only yours</h2>
+              <p class="step-why">User memory is included only when you are the person who asked. A sibling’s question does not pull it in.</p>
+              <ol class="how">
+                <li>In the Maya chat, send <em>Remember that I’m allergic to shellfish.</em></li>
+                <li>Portico AI proposes the fact. It is not saved yet.</li>
+                <li>Tap <span class="ui">Save memory</span> on <em>Save this user memory</em>.</li>
+                <li>Ask <em>What should I skip at the oyster bar?</em> The reply can use the allergy. The same question from someone else’s chat cannot.</li>
+              </ol>
+              <p class="tip"><strong>Why confirm:</strong> the model may suggest a fact. The row is written only after a person saves it. Dismiss it and nothing is kept.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot" data-shot="02-user-memory.png">
+                <div class="shot-frame"><span class="shot-label">Save this user memory: allergic to shellfish, with Save memory</span><code>02-user-memory.png</code></div>
+              </figure>
+            </div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Save a fact for one conversation</h2>
+              <p class="step-why">List memory belongs to the thread. Anyone posting there gets it. A different chat does not.</p>
+              <ol class="how">
+                <li>Create a <span class="ui">Conversation</span> named <em>Meals</em> and invite the people who plan dinner.</li>
+                <li>In that list’s settings, turn on <strong>Portico AI is in this conversation</strong>.</li>
+                <li>Send <em>Remember that we are vegetarian through October.</em></li>
+                <li>Tap <span class="ui">Save memory</span> on <em>Save this list memory</em>.</li>
+              </ol>
+              <p class="tip"><strong>Why it is not a household rule:</strong> October is a plan for this thread. A private homework chat should not inherit it, and it should not follow every person into their own AI Chat.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot" data-shot="03-list-memory.png">
+                <div class="shot-frame"><span class="shot-label">The Meals conversation proposing Save this list memory: vegetarian through October</span><code>03-list-memory.png</code></div>
+              </figure>
+            </div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Save a fact for the whole house</h2>
+              <p class="step-why">Agent memory is included in every Portico AI reply on this agent. Only the host can save or delete it.</p>
+              <ol class="how">
+                <li>From the host’s phone, in any AI Chat, send <em>Remember for the whole house that the dog is Biscuit.</em></li>
+                <li>Tap <span class="ui">Save memory</span> on <em>Save this agent memory</em>.</li>
+                <li>Ask from the Meals thread, and from Maya’s private chat, <em>What is the dog’s name?</em> Both replies can use it.</li>
+              </ol>
+              <p class="tip"><strong>Why the host is the only one:</strong> an invitee can use the assistant on lists you shared. They cannot rewrite what every reply on the agent knows. If you later point AI at a different model, Biscuit, the allergy, and the October plan stay on the agent.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot" data-shot="04-agent-memory.png">
+                <div class="shot-frame"><span class="shot-label">Save this agent memory: the dog is Biscuit, with Save memory on the host’s phone</span><code>04-agent-memory.png</code></div>
+              </figure>
+            </div>
+          </div>
+        </li>
+      </ol>
+
+      <section class="journey-more" aria-labelledby="more-title">
+        <p class="section-kicker">Keep going</p>
+        <h2 id="more-title">Next journeys</h2>
+        <div class="uses-grid">
+          <a class="use-card" href="../grocery-list/">
+            <p class="use-tag">Family · Lists</p>
+            <h4>One grocery list for the whole house</h4>
+            <span class="use-link">See the journey →</span>
+          </a>
+          <a class="use-card" href="../chores/">
+            <p class="use-tag">Family · Reminders</p>
+            <h4>Chores the kids actually get pinged about</h4>
+            <span class="use-link">See the journey →</span>
+          </a>
+          <a class="use-card" href="../family-photos/">
+            <p class="use-tag">Family · Files</p>
+            <h4>Family photos, shared from home</h4>
+            <span class="use-link">See the journey →</span>
+          </a>
+        </div>
+        <p class="disclaimer" role="note">The Lindstrom family is a fictional illustration. Product setup is in the <a class="text-link" href="https://web.porticoworks.dev/guides/#memory">AI memory guide</a>.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>A project from <a class="text-link" href="https://porticoworks.dev/">Portico Works, LLC</a> · North Carolina, USA</p>
+      <p>
+        © <span id="year">2026</span>
+        · <a class="text-link" href="https://porticoworks.dev/privacy">Privacy</a>
+        · <a class="text-link" href="mailto:hello@porticoworks.dev">hello@porticoworks.dev</a>
+      </p>
+    </footer>
+
+    <script src="../journey.js"></script>
+  </body>
+</html>
