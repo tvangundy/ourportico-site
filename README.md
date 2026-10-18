@@ -45,7 +45,7 @@ The slot label becomes the image's alt text, so if a shot doesn't match its labe
 
 **ai-memory:** `01-ai-chat` private AI Chat · `02-user-memory` Save this user memory · `02-oyster-bar` allergy used in a reply · `03-list-memory` Meals confirm card, vegetarian through October · `04-agent-memory` confirm card, the dog is Biscuit · `04-meals-knows` Meals answers the dog’s name
 
-**family-photos:** `01-edge-console` (wide) console with Things · `02-add-thing` (wide) Folder (Portico Files), Users read-only · `03-upload` (wide) Beach Trip tree with Upload · `04-invite-things` (wide) Invitation type Things, folder ticked · `05-photos-grid` Beach Trip photo grid · `06-photo-wall` Portico Photos · `07-can-write` Users panel with Can write · `08-watermark` watermarked photo, View only
+**family-photos:** `01-edge-console` (wide) console Things panel with Beach Trip · `02-add-thing` Add Thing, Folder (Portico Files), Users read-only · `03-upload` (wide) Beach Trip tree with Upload · `04-invite-type` Things + Portico Relay · `04-invite-things` Grandmas iPad, Family Photos and Beach Trip ticked · `05-photos-grid` Beach Trip photo grid · `06-photo-wall` Portico Photos on the beach pictures · `07-can-write` Users panel with Can write · `08-share-photo` (wide) Share photo as Thing · `08-watermark` watermarked photo, View only
 
 **bar-closing:** `01-closing-list` Closing checklist · `02-settings` Mark in place / Manual reorder / Mark all undone · `03-list-reminder` 1:30 AM Every day Everyone · `04-item-reminder` back door 2:15 AM Just me · `05-crew` Users panel · `06-checked-off` lock screen "X checked off …" · `07-done` all steps checked in place
 
