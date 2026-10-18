@@ -45,13 +45,13 @@ The slot label becomes the image's alt text, so if a shot doesn't match its labe
 
 **ai-memory:** `01-ai-chat` private AI Chat · `02-user-memory` Save this user memory · `03-list-memory` Save this list memory in the family thread · `04-agent-memory` Save this agent memory, host only
 
-**family-photos:** `01-edge-console` (wide) console with Things · `02-add-thing` (wide) Folder (Portico Files), Users read-only · `03-upload` folder with Upload · `04-invite-things` (wide) Invitation type Things, folder ticked · `05-photos-grid` Photos view · `06-photo-wall` Portico Photos · `07-can-write` Users panel with Can write · `08-watermark` watermarked photo, View only
+**family-photos:** `01-edge-console` (wide) console with Things · `02-add-thing` (wide) Folder (Portico Files), Users read-only · `03-upload` (wide) Beach Trip tree with Upload · `04-invite-things` (wide) Invitation type Things, folder ticked · `05-photos-grid` Beach Trip photo grid · `06-photo-wall` Portico Photos · `07-can-write` Users panel with Can write · `08-watermark` watermarked photo, View only
 
 **bar-closing:** `01-closing-list` Closing checklist · `02-settings` Mark in place / Manual reorder / Mark all undone · `03-list-reminder` 1:30 AM Every day Everyone · `04-item-reminder` back door 2:15 AM Just me · `05-crew` Users panel · `06-checked-off` lock screen "X checked off …" · `07-done` all steps checked in place
 
 **shift-handoff:** `01-opening` Opening checklist · `02-6am` 6:00 AM Every day Everyone · `03-milk` item reminder Every week Just me · `04-shift-notes` Conversation thread · `05-timer` running cold brew timer · `06-list-invitations` List invitations with Accept
 
-**team-files:** `01-add-thing` (wide) Team Drive with quota · `02-tree` (wide) Tree view folders · `03-invite` (wide) Things invite with Team Drive · `04-users` Can write / Read-only mix · `05-share-as-thing` selection bar Share as Thing · `06-client-view` client's single watermarked folder · `07-network-drive` (wide) Connect as a network drive
+**team-files:** `01-add-thing` (wide) Team Drive with quota · `02-tree` (wide) Tree view folders · `03-invite` (wide) Things invite with Team Drive · `04-users` Can write / Read-only mix · `05-share-as-thing` (wide) selection bar Share photo as Thing · `06-client-view` client's single watermarked folder · `07-network-drive` (wide) Connect as a network drive
 
 All people and businesses in the journeys are fictional; each page says so in its footer note.
 
