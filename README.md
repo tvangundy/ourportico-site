@@ -41,7 +41,7 @@ The slot label becomes the image's alt text, so if a shot doesn't match its labe
 
 **grocery-list:** `01-agent-provisioning` new Cloud Agent Provisioning / Linking · `01-agent-ready` home screen with agent connected · `02-open-lists` Apps card with Portico Lists · `02-new-list` New dialog, Groceries / Grocery · `03-items` list with a few items · `04-invite-form` Users panel invite form · `05-invite-qr` Invite link QR dialog · `06-accept` invitee Accept · `07-shared-list` invitee's Lists showing Groceries · `08-notifications` Item added / Item removed on · `09-done` Done header with Clear
 
-**chores:** `01-checklist` Chores checklist · `02-mark-in-place` When marking items = Mark in place · `03-item-reminder` every week / everyone, curb note · `03-paused` recycling checked, reminder paused · `04-list-reminder` Reminders section with the Sunday check-in · `05-users` Users panel · `06-push` lock-screen reminder
+**chores:** `01-checklist` Chores checklist · `02-mark-in-place` When marking items = Mark in place · `03-item-reminder` Thursday 6:30 PM / everyone / curb note · `03-on-item` reminder shown on the chore · `03-paused` recycling checked, reminder paused · `04-add-reminder` Saturday 5:00 PM check-in form · `04-list-reminder` Reminders section with that check-in · `05-users` Users panel · `06-push` lock-screen reminder
 
 **ai-memory:** `01-ai-chat` private AI Chat · `02-user-memory` Save this user memory · `02-oyster-bar` allergy used in a reply · `03-list-memory` Meals confirm card, vegetarian through October · `04-agent-memory` confirm card, the dog is Biscuit · `04-meals-knows` Meals answers the dog’s name
 
