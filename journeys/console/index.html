@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="How the Portico header, pills, and panels work: show and hide the pill row, fold a panel, and bring a hidden panel back.">
+    <meta name="theme-color" content="#050505">
+    <meta property="og:title" content="Header, pills, and panels — Our Portico">
+    <meta property="og:url" content="https://ourportico.com/journeys/console/">
+    <meta property="og:image" content="https://ourportico.com/logo.png">
+    <title>Header, pills, and panels — Our Portico</title>
+    <link rel="icon" href="../../favicon.ico" sizes="32x32">
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../../apple-touch-icon.png" sizes="180x180">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand-cluster">
+        <a class="wordmark-logo" href="https://api.porticoworks.dev/app/#/login" aria-label="Sign in to Portico">
+          <img class="brand-logo" src="../../logo.png" width="32" height="32" alt="">
+        </a>
+        <a class="wordmark" href="../../" aria-label="Our Portico">
+          <span>Our Portico</span>
+        </a>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="../../#uses">Use cases</a>
+        <a href="../../#stories">Stories</a>
+        <a class="nav-cta" href="https://web.porticoworks.dev/start/">Get started</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <p class="crumb"><a class="text-link" href="../../#uses">← All use cases</a></p>
+
+      <section class="journey-hero" aria-labelledby="journey-title">
+        <p class="eyebrow">The screen · Console</p>
+        <h1 id="journey-title">Header, pills, and panels</h1>
+        <p class="hero-lede">
+          The console is one scrolling page. The header is the top of that page. The pills decide
+          which panels are on the page. Each panel folds open or closed on its own. Elena's phone,
+          below, has the pill row open so you can see all three at once.
+        </p>
+        <ul class="journey-facts">
+          <li><strong>You'll need</strong>Portico Mobile, signed in</li>
+          <li><strong>Where</strong>The console, then Lists</li>
+          <li><strong>Time</strong>A few minutes of tapping</li>
+        </ul>
+      </section>
+
+      <section class="journey-outcome" aria-labelledby="outcome-title">
+        <h2 id="outcome-title">What you'll be able to do</h2>
+        <ul>
+          <li>Read the five controls in the header.</li>
+          <li>Show the pill row, then put it away.</li>
+          <li>Fold a panel, or hide it until its pill brings it back.</li>
+        </ul>
+      </section>
+
+      <ol class="journey-steps">
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Read the header</h2>
+              <p class="step-why">Five controls sit in the header. The first four scroll away with the page. The sparkle stays in the corner, because it belongs to the phone app.</p>
+              <ol class="how">
+                <li>Tap the <strong>Portico mark</strong> to come back to the console. Hold it to show a QR code for porticonow.com.</li>
+                <li>Tap the word <strong>Portico</strong> to refresh this screen. Hold the word to sign out. <span class="ui">Console</span> under the word means you are on the console. Inside an app, that line names the app or the Thing you opened.</li>
+                <li><span class="ui">Live</span> is a status, not a switch. Live means this screen can reach Portico. <span class="ui">Offline</span> means it cannot. <span class="ui">Connecting…</span> means it is still checking.</li>
+                <li>The <strong>double chevron</strong> shows or hides the pill row. Chevrons pointing up mean the pills are open, as in this shot. Chevrons pointing down mean the row is hidden.</li>
+                <li>The <strong>sparkle</strong> in the corner belongs to the phone app. Tap it for connection status. Hold it to freeze rotation, and hold it again to unlock. Tap it once more to close the sheet.</li>
+              </ol>
+            </div>
+            <div class="shots">
+              <figure class="shot" data-shot="01-pills-open.png">
+                <div class="shot-frame"><span class="shot-label">Elena's console with the pill row open: Live, the up chevron, and the status sparkle in the header. Account, Agents, and Apps are blue. Help is gray. The other pills are rose.</span><code>01-pills-open.png</code></div>
+                <figcaption>Pills open. Blue is on the page. Rose is hidden. Help is gray, so tips are off.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Show the pills, then put them away</h2>
+              <p class="step-why">The pill row is a map of the page. It starts hidden on every visit so the panels have the screen.</p>
+              <ol class="how">
+                <li>A new visit starts with the pills hidden and the chevron pointing down. Tap the chevron. The row opens and the chevron points up.</li>
+                <li>Tap the chevron again. The pills leave. The panels stay exactly as they were.</li>
+                <li>That open-or-closed choice lasts only for this visit. The next time you open Portico, the pills start hidden again.</li>
+              </ol>
+              <p class="tip"><strong>What the phone remembers:</strong> which panels are on the page, and which of those are folded. It does not remember that you had the pill row open.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot" data-shot="02-pills-hidden.png">
+                <div class="shot-frame"><span class="shot-label">The same console with the pill row hidden. The chevron points down. Account, Agents, and Apps are still on the page.</span><code>02-pills-hidden.png</code></div>
+                <figcaption>Same page. The pills are tucked away.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Blue is on the page. Rose is hidden.</h2>
+              <p class="step-why">A pill does not open a new screen. It puts that panel on this page, or takes it off.</p>
+              <ol class="how">
+                <li>Tap a <strong>rose</strong> pill. Its panel appears, the page scrolls to it, and the pill turns <strong>blue</strong>.</li>
+                <li>Tap a <strong>blue</strong> pill. That panel leaves the page and the pill turns rose.</li>
+                <li>On Elena's phone, <span class="ui">Account</span>, <span class="ui">Agents</span>, and <span class="ui">Apps</span> are blue, so those panels are on the page. <span class="ui">Help</span> is gray, so the short tips are off. <span class="ui">Split</span>, <span class="ui">Friends</span>, <span class="ui">Invitations</span>, <span class="ui">Things</span>, <span class="ui">Conversations</span>, <span class="ui">Reminders</span>, <span class="ui">Alerts</span>, and <span class="ui">Settings</span> are rose, so those panels are not on the page.</li>
+              </ol>
+              <ul class="key" aria-label="Pill colors">
+                <li><i class="on" aria-hidden="true"></i> Blue — on the page</li>
+                <li><i class="off" aria-hidden="true"></i> Rose — hidden</li>
+                <li><i class="dim" aria-hidden="true"></i> Gray — off, for Help</li>
+              </ul>
+              <p class="tip"><strong>The number is not the color.</strong> <span class="ui">Alerts (2)</span> means two alerts are waiting. The rose color still means the Alerts panel is hidden. <span class="ui">Help</span> is gray while tips are off, as in this shot, and turns blue when you tap it to show the tips. <span class="ui">Split</span> stays rose until split screen is on.</p>
+              <p class="tip"><strong>Split screen:</strong> open <span class="ui">Settings</span> and pick the two panels Split should show, one above the other. Then tap <span class="ui">Split</span>. Those two panels fill the screen and the pill turns blue. Tap it again to leave.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot" data-shot="01-pills-open.png">
+                <div class="shot-frame"><span class="shot-label">The open pill row on Elena's console, with Alerts showing a count of 2 while the pill stays rose</span><code>01-pills-open.png</code></div>
+                <figcaption>Alerts (2) is a count. The pill is still rose.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Fold a panel without removing it</h2>
+              <p class="step-why">Folding tucks the body of a panel. The heading stays, so you can open it again with one tap.</p>
+              <ol class="how">
+                <li>Tap a panel's <strong>heading</strong>. A short tap folds the body, or opens it if it was folded.</li>
+                <li>The mark beside the name points <strong>right</strong> when the body is folded, and <strong>down</strong> when it is open.</li>
+                <li>On the shot below, Friends and Apps are folded. Agents and Things are open. All four panels are still on the page.</li>
+              </ol>
+              <p class="tip"><strong>Buttons on the heading</strong> are separate from the fold. <span class="ui">+</span> adds something in that panel. The person-plus on Friends adds a friend. The square with an arrow opens that agent, app, or Thing.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot" data-shot="03-fold.png">
+                <div class="shot-frame"><span class="shot-label">Friends and Apps folded, Agents and Things open, with the pill row hidden</span><code>03-fold.png</code></div>
+                <figcaption>Right-pointing marks are folded. Down-pointing marks are open.</figcaption>
+              </figure>
+              <figure class="shot" data-shot="04-open-and-closed.png">
+                <div class="shot-frame"><span class="shot-label">Friends, Agents, and Apps folded, with Things and Conversations open</span><code>04-open-and-closed.png</code></div>
+                <figcaption>Several panels folded, two left open.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Hide a panel until you ask for it</h2>
+              <p class="step-why">A long-press takes the panel off the page. Its pill is the only way back.</p>
+              <ol class="how">
+                <li>Press a panel's heading and hold for about half a second.</li>
+                <li>The panel leaves. Its pill turns rose. A note names the pill that brings it back.</li>
+                <li>Tap that pill when you want the panel again.</li>
+              </ol>
+              <p class="tip"><strong>A short tap still only folds.</strong> If your finger slides, the hold cancels, so scrolling past a heading does not hide the panel. The phone keeps a hidden panel hidden the next time you open the app. Turn <span class="ui">Split</span> off before a long-press. Split screen will not hide a panel.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot" data-shot="02-pills-hidden.png">
+                <div class="shot-frame"><span class="shot-label">Account, Agents, and Apps still on the page after the pill row is hidden. Friends and Things are not here because their pills are off.</span><code>02-pills-hidden.png</code></div>
+                <figcaption>Hidden panels are gone. Folded ones would still show a heading.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>Sort with the small pill</h2>
+              <p class="step-why">The little pill under a heading is a sort. It is not a show-or-hide control.</p>
+              <ol class="how">
+                <li>Look for <span class="ui">Recently used</span>, <span class="ui">Recent</span>, or <span class="ui">Most recent</span> under a heading.</li>
+                <li>Tap it to move to the next sort. The rows reshuffle. The pill's words change.</li>
+                <li>Hold that pill to choose which sorts a tap cycles through. At least one stays checked.</li>
+              </ol>
+            </div>
+            <div class="shots">
+              <figure class="shot" data-shot="05-sort.png">
+                <div class="shot-frame"><span class="shot-label">Conversations and Things open, each with a Recently used sort pill. Grocery has an open button.</span><code>05-sort.png</code></div>
+                <figcaption>Recently used sorts the rows in that panel.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-grid">
+            <div>
+              <h2>The header follows you into an app</h2>
+              <p class="step-why">Lists, Files, and a single Thing use the same header. The pills on that screen belong to that screen.</p>
+              <ol class="how">
+                <li>From the console, open <strong>Lists</strong> in Apps, or open a Thing such as <em>Grocery</em>.</li>
+                <li>The mark, <span class="ui">Live</span>, the chevron, and the status sparkle stay. On Elena's Lists home, the big word is <strong>Elena</strong> and <span class="ui">Lists</span> sits under it. Inside Grocery, the big word is <strong>Grocery</strong> and <span class="ui">Elena</span> sits under it.</li>
+                <li>Tap the chevron on that screen the same way. Its pills are for that app, not a copy of the console's pills.</li>
+                <li>Tap the Portico mark when you want the console back.</li>
+              </ol>
+              <p class="tip"><strong>Same controls on every phone.</strong> Jonas's console has the same header, the same Agents panel, and the same Apps panel. What changes is whose agent you are looking at.</p>
+            </div>
+            <div class="shots">
+              <figure class="shot" data-shot="06-inside-lists.png">
+                <div class="shot-frame"><span class="shot-label">Elena's Lists home. The header reads Elena and Lists, with Live, the down chevron, and the status sparkle. Most recent sorts the rows.</span><code>06-inside-lists.png</code></div>
+                <figcaption>Inside Lists. Most recent is that screen's sort pill.</figcaption>
+              </figure>
+              <figure class="shot" data-shot="08-inside-thing.png">
+                <div class="shot-frame"><span class="shot-label">Grocery open, header reading Grocery and Elena, with Live and the down chevron still in place</span><code>08-inside-thing.png</code></div>
+                <figcaption>Inside a Thing. The header is still the header.</figcaption>
+              </figure>
+              <figure class="shot" data-shot="07-jonas-console.png">
+                <div class="shot-frame"><span class="shot-label">Jonas's console with the pill row hidden, his agent online, and Files and Lists under Apps</span><code>07-jonas-console.png</code></div>
+                <figcaption>Jonas's phone. Same header, his own agent.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </li>
+      </ol>
+
+      <section class="journey-more" aria-labelledby="more-title">
+        <p class="section-kicker">Keep going</p>
+        <h2 id="more-title">Use it for something</h2>
+        <div class="uses-grid">
+          <a class="use-card" href="../grocery-list/">
+            <p class="use-tag">Family · Lists</p>
+            <h4>One grocery list for the whole house</h4>
+            <span class="use-link">See the journey →</span>
+          </a>
+          <a class="use-card" href="../chores/">
+            <p class="use-tag">Family · Reminders</p>
+            <h4>Chores the kids actually get pinged about</h4>
+            <span class="use-link">See the journey →</span>
+          </a>
+          <a class="use-card" href="../family-photos/">
+            <p class="use-tag">Family · Files</p>
+            <h4>Family photos, shared from home</h4>
+            <span class="use-link">See the journey →</span>
+          </a>
+        </div>
+        <p class="disclaimer" role="note">Elena, Amara, and Jonas are a fictional household. The screens are the real app.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>A project from <a class="text-link" href="https://porticoworks.dev/">Portico Works, LLC</a> · North Carolina, USA</p>
+      <p>
+        © <span id="year">2026</span>
+        · <a class="text-link" href="https://porticoworks.dev/privacy">Privacy</a>
+        · <a class="text-link" href="mailto:hello@porticoworks.dev">hello@porticoworks.dev</a>
+      </p>
+    </footer>
+
+    <script src="../journey.js"></script>
+  </body>
+</html>

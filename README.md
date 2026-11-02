@@ -18,6 +18,7 @@ Use-case cards in `index.html` (`#uses`) link to `journeys/<slug>/index.html`. A
 
 | Slug | Audience | Shows |
 | --- | --- | --- |
+| `console` | Everyone | Header buttons, pill row, folding and hiding panels |
 | `grocery-list` | Family | Grocery list, list invites, notifications |
 | `chores` | Family | Checklist, item + list reminders |
 | `ai-memory` | Family | AI Chat with user, list, and agent memory |
@@ -38,6 +39,8 @@ Slot filenames are unique across all journeys, so the easiest workflow is an inb
 4. Run `task shots:missing` to see which slots still need a screenshot.
 
 The slot label becomes the image's alt text, so if a shot doesn't match its label, fix the label in the journey page. Crop out or black-box real names, emails, and live invite links before filing.
+
+**console:** `01-pills-open` pill row open, blue vs rose · `02-pills-hidden` chevron down, panels remain · `03-fold` Friends and Apps folded, Agents and Things open · `04-open-and-closed` several headings folded · `05-sort` Recently used under Conversations and Things · `06-inside-lists` Lists home with Most recent · `07-jonas-console` same header on Jonas's phone · `08-inside-thing` Grocery open, header still there
 
 **grocery-list:** `01-agent-provisioning` new Cloud Agent Provisioning / Linking · `01-agent-ready` home screen with agent connected · `02-open-lists` Apps card with Portico Lists · `02-new-list` New dialog, Groceries / Grocery · `03-items` list with a few items · `04-invite-form` Users panel invite form · `05-invite-qr` Invite link QR dialog · `06-accept` invitee Accept · `07-shared-list` invitee's Lists showing Groceries · `08-notifications` Item added / Item removed on · `09-done` Done header with Clear
 
